@@ -23,4 +23,5 @@ per-paper metadata files.
   not be browsed directly. Web-search indexing also lags ~10 days for this niche, so very recent
   video-generation papers are not yet retrievable. Items are verified via web search against real
   arXiv IDs / project pages. Allow-listing `arxiv.org`, `huggingface.co`, and `aha-time.com` would
-  enable PDF capture and primary-source reads in future runs.
+  enable PDF capture and primary-source reads in future runs. **See [SETUP.md](SETUP.md) for the
+  exact steps to fix this** (switch the environment to Custom network access + allowlist).
