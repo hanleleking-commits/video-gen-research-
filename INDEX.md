@@ -8,6 +8,7 @@ per-paper metadata files.
 
 | Date | Top headlines | Digest |
 |------|---------------|--------|
+| 2026-06-25 | Grok Imagine Video 1.5 GA (xAI; #1 Image-to-Video Arena, native single-pass audio, ~6s 720p in ~25s, $4.20/min) — **light day**, no new in-window arXiv video papers verifiable | [research/2026-06-25/summary.md](research/2026-06-25/summary.md) |
 | 2026-06-24 | MilliVid (hierarchical coarse-to-fine latents for long-range consistency) · ViMax (agentic multi-agent long-form video) · Making Time Editable in Video DiTs (explicit temporal control) · LongLive-RAG (retrieval-augmented long video) | [research/2026-06-24/summary.md](research/2026-06-24/summary.md) |
 
 ---
@@ -16,7 +17,10 @@ per-paper metadata files.
 - **Coverage:** primary sources are arXiv (cs.CV / cs.LG), official project/blog pages, the
   [Awesome-From-Video-Generation-to-World-Model](https://github.com/ziqihuangg/Awesome-From-Video-Generation-to-World-Model)
   list, and the [arXiv daily AIGC tracker](https://www.aha-time.com/arxiv_daily_aigc/).
-- **Environment caveat (2026-06-24):** `arxiv.org` and `huggingface.co` are blocked by this
-  environment's network egress policy, so PDF artifacts could not be downloaded and the literal
-  last-7-day arXiv listing could not be browsed directly. Items are verified via web search against
-  real arXiv IDs / project pages. Allow-listing `arxiv.org` would enable PDF capture in future runs.
+- **Environment caveat (2026-06-24, still in force 2026-06-25):** `arxiv.org`, `huggingface.co`, and
+  `aha-time.com` are unreachable from this environment (raw `curl` returns `000`; `WebFetch` returns
+  HTTP 403), so PDF artifacts could not be downloaded and the literal last-7-day arXiv listing could
+  not be browsed directly. Web-search indexing also lags ~10 days for this niche, so very recent
+  video-generation papers are not yet retrievable. Items are verified via web search against real
+  arXiv IDs / project pages. Allow-listing `arxiv.org`, `huggingface.co`, and `aha-time.com` would
+  enable PDF capture and primary-source reads in future runs.
